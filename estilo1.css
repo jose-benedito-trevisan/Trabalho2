@@ -1,0 +1,146 @@
+/*Computadores*/
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    background-color: green ;
+    background-repeat:unset;
+}
+header {
+    text-align: center;
+    background-color: rgb(41 12 185);
+    background-image: url(8.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 8%;
+    padding: 2px;
+}
+
+/*Cabecalho*/
+header h1 {
+    color: white;
+    font-size: 50px;
+}
+
+/*Navegacao*/
+nav ul {
+    list-style-type: none;
+    background-color: hsla(251, 92.2%, 20.0%, 0.5);
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+}
+nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 16px;
+    display: block;
+}
+nav li{
+    float: left;
+}
+nav a:hover {
+    background-color: #ffffff;
+    color: rgb(21, 4, 98);
+}
+.ativo {
+    background-color: rgb(41 12 185);
+}
+
+/*Corpo*/
+.corpo {
+    padding: 0px 20px;
+    display: table;
+}
+section {
+    float: left;
+    width: 75%;
+}
+.card1, .corpo1 {
+    background-color: rgba(255, 255, 255, 1);
+    background-image: url(6.png);
+    background-repeat:no-repeat;
+    background-size: 100%;
+    background-position: center;
+    padding: 20px;
+    margin-top: 20px;
+    border: solid 1px white;
+    border-radius: 30px;
+    line-height: 2;
+}
+table th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    margin: 0px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+table {
+    width: 100%;
+}
+.img1 {
+    margin-top: -50px;
+}
+article h2, h5 {
+    text-align: center;
+}
+article .icon {
+    text-align: center;
+}
+
+/*Barralateral*/
+aside {
+    float: right;
+    width: 25%;
+    text-align: center;
+    padding-left: 40px;
+    margin-top: 0px;
+    
+}
+
+/*Rodape*/
+footer {
+    padding: 20px;
+    background-color: hsl(251, 92.2%, 20.0%);
+    color: white;
+    margin-top: 20px;
+    display: table;
+    width: 100%;
+}
+footer dl, footer p {
+    display: table-cell;
+    vertical-align: middle;
+}
+footer dt {
+    font-weight: bold;
+}
+footer dd {
+    margin-left: 0px;
+}
+footer p {
+    text-align: right;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+/*Tablets*/
+@media screen and (max-width: 1100px) {
+    section, aside {
+        width: 100%;
+        float: none;
+        padding: 0px;
+    }
+}
+/*Celulare*/
+@media screen and (max-width: 600px) {
+    nav li {
+        float: none;
+        text-align: center;
+    }
+    footer p {
+        display: none;
+    }
+}
